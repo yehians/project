@@ -169,13 +169,36 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IitemsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RooomsController.cs" />
+    <Compile Include="Controllers\TablesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112211446343_InitialCreate.cs" />
+    <Compile Include="Migrations\202112211446343_InitialCreate.Designer.cs">
+      <DependentUpon>202112211446343_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112221010171_AddRoomsTable.cs" />
+    <Compile Include="Migrations\202112221010171_AddRoomsTable.Designer.cs">
+      <DependentUpon>202112221010171_AddRoomsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112221028469_AddIitemTable.cs" />
+    <Compile Include="Migrations\202112221028469_AddIitemTable.Designer.cs">
+      <DependentUpon>202112221028469_AddIitemTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112221235059_AddTableeTable.cs" />
+    <Compile Include="Migrations\202112221235059_AddTableeTable.Designer.cs">
+      <DependentUpon>202112221235059_AddTableeTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Iitem.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Roooms.cs" />
+    <Compile Include="Models\Table.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -235,9 +258,25 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Roooms\Create.cshtml" />
+    <Content Include="Views\Roooms\Delete.cshtml" />
+    <Content Include="Views\Roooms\Details.cshtml" />
+    <Content Include="Views\Roooms\Edit.cshtml" />
+    <Content Include="Views\Roooms\Index.cshtml" />
+    <Content Include="Views\Iitems\Create.cshtml" />
+    <Content Include="Views\Iitems\Delete.cshtml" />
+    <Content Include="Views\Iitems\Details.cshtml" />
+    <Content Include="Views\Iitems\Edit.cshtml" />
+    <Content Include="Views\Iitems\Index.cshtml" />
+    <Content Include="Views\Tables\Create.cshtml" />
+    <Content Include="Views\Tables\Delete.cshtml" />
+    <Content Include="Views\Tables\Details.cshtml" />
+    <Content Include="Views\Tables\Edit.cshtml" />
+    <Content Include="Views\Tables\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -251,6 +290,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202112211446343_InitialCreate.resx">
+      <DependentUpon>202112211446343_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112221010171_AddRoomsTable.resx">
+      <DependentUpon>202112221010171_AddRoomsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112221028469_AddIitemTable.resx">
+      <DependentUpon>202112221028469_AddIitemTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112221235059_AddTableeTable.resx">
+      <DependentUpon>202112221235059_AddTableeTable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

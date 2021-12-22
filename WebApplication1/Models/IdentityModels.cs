@@ -29,5 +29,11 @@ namespace WebApplication1.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<WebApplication1.Models.Roooms> Roooms { get; set; }
+
+        public System.Data.Entity.DbSet<WebApplication1.Models.Iitem> Iitems { get; set; }
+
+        public System.Data.Entity.DbSet<WebApplication1.Models.Table> Tables { get; set; }
     }
 }
