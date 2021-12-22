@@ -11,5 +11,7 @@ namespace WebApplication1.Models
         public int id { get; set; }
         public int Room_id { get; set; }
         public bool place_in { get; set; }
+        public virtual ICollection<Table> Tables { get; set; }
+
     }
 }
